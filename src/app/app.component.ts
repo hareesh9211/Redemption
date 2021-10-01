@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hareesh';
+   
+ Users:any=[];
+
+  addUserData(ref:any){
+     let Userobj=ref.value;
+    this.Users.push(Userobj)
+    ref.reset();
+
+  }
+  
 }
